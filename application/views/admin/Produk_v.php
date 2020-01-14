@@ -41,13 +41,15 @@
                       </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($dataProduk as $key => $row): ?>
                         <tr>
-                            <td>1</td>
-                            <td>Hoodie aoyama</td>
-                            <td>Ini gambarnya</td>
-                            <td>Rp.250.00</td>
-                            <td>[JNE] OR [JNT]</td>
+                            <td><?= $key + 1 ?></td>
+                            <td><?= $row["nama"] ?></td>
+                            <td><?= $row["gambar"] ?></td>
+                            <td><?= $row["harga"] ?></td>
+                            <td><?= $row["id_kurir"] ?></td>
                         </tr>
+                      <?php endforeach ?>
                     </tbody>
                   </table>
                 </div>

@@ -41,15 +41,18 @@
                       </tr>
                     </thead>
                     <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Muhammad herry legowo</td>
-                                <td>Tarakan. Kalimantan utara</td>
-                                <td>Hoodie Black</td>
-                                <td>
-                                  pengiriman menggunakan ["JNE"]
-                                </td>
-                            </tr>
+                    <?php
+                      $i = 1;
+                      foreach ($dataCustomer as $row) :
+                    ?>
+                          <tr>
+                              <td><?= $i++ ?></td>
+                              <td><?= $row["nama"] ?></td>
+                              <td><?= $row["alamat"] ?></td>
+                              <td><?= $row["id_produk"] ?></td>
+                              <td><?= $row["id_transaksi"] ?></td>
+                          </tr>
+                    <?php endforeach ; ?>
                     </tbody>
                   </table>
                 </div>

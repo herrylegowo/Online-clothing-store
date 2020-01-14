@@ -40,15 +40,14 @@
                       </tr>
                     </thead>
                     <tbody>
+                    <?php foreach ($dataTransaksi as $key => $row): ?>
                         <tr>
-                            <td>1</td>
-                            <td>Muhammad herry legowo</td>
-                            <td>
-                                <img src="gambar" alt="gambar">
-                                <p>Hoodie aoyama</p>
-                            </td>
-                            <td>[JNE]</td>
+                            <td><?= $key + 1 ?></td>
+                            <td><?= $row["id_costumer"] ?></td>
+                            <td><?= $row["id_produk"] ?></td>
+                            <td><?= $row["id_kurir"] ?></td>
                         </tr>
+                      <?php endforeach ?>
                     </tbody>
                   </table>
                 </div>
