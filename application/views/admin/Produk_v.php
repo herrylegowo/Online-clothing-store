@@ -28,6 +28,40 @@
               <div class="box box-success">
                 <div class="box-header">
                   <h3 class="box-title">Data Barang</h3>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="tab_1">
+
+                      <form role="form" action="<?= base_url("admin/produk/tambahProduk") ?>" method="POST">
+                        <div class="box-body">
+                          <div class="col-xs-6">
+                          <div class="form-group">
+                              <label>Id Produk</label>
+                              <input type="hidden" class="form-control" name="id_produk" required>
+                            </div>
+                            <div class="form-group">
+                              <label>Nama produk</label>
+                              <input type="text" class="form-control" name="nama" required>
+                            </div>
+                            <div class="form-group">
+                              <label>Gambar</label>
+                              <input type="text" class="form-control" name="gambar" required>
+                            </div>
+                            <div class="form-group">
+                              <label>Harga Produk</label>
+                              <input type="text" class="form-control" name="harga" required>
+                            </div>
+                            <div class="form-group">
+                              <label>ID Kurir</label>
+                              <input type="text" class="form-control" name="id_kurir" required>
+                            </div>
+                          </div>
+                        </div> <!-- /box-body -->
+                        <div class="box-footer">
+                          <div class="col-xs-6">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </div>
+                        </div>
+                      </form>
                 </div>
                 <div class="box-body">
                   <table class="table table-bordered table-hover">
@@ -38,6 +72,7 @@
                         <th>Gambar</th>
                         <th>Harga</th>
                         <th>Kurir</th>
+                        <th>AKSI</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -48,6 +83,9 @@
                             <td><?= $row["gambar"] ?></td>
                             <td><?= $row["harga"] ?></td>
                             <td><?= $row["id_kurir"] ?></td>
+                            <td>
+                            <a href="<?= base_url("admin/produk/hapusProduk/").$row["id_produk"] ?>" class="btn btn-danger btn-xs">Delete</a>
+                            </td>
                         </tr>
                       <?php endforeach ?>
                     </tbody>

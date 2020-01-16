@@ -78,19 +78,18 @@
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">MAIN NAVIGATION</li>
       <li>
-        <a href="">
+        <a href="<?= base_url("admin/customer") ?>">
           <i class="fa fa-dashboard"></i> <span>Dashboard</span>
         </a>
       </li>
 
-        </a>
-        <ul class="treeview-menu">
-          <li><a href=""><i class="fa fa-circle-o"></i> Produk</a></li>
-        </ul>
+      <li>
+        <a href="<?= base_url("admin/produk/produkModel") ?>">
+        <i class="fa fa-circle-o"></i> Produk</a></li>
       </li>
 
       <li>
-        <a href="">
+        <a href="<?= base_url("admin/transaksi/transaksiModel") ?>">
           <i class="fa fa-credit-card"></i> <span>Transaksi</span>
         </a>
       </li>
@@ -100,7 +99,7 @@
         </a>
       </li> -->
       <li>
-        <a href="">
+        <a href="<?= base_url("admin/customer/customerModel") ?>">
           <i class="fa fa-users"></i> <span>Customers</span>
         </a>
       </li>

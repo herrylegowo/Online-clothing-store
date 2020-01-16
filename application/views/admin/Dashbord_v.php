@@ -87,6 +87,8 @@
       <?php $this->load->view("templates/footer") ?>
       <div class="control-sidebar-bg"></div>
     </div>
+    <div>
     <?php $this->load->view("templates/script") ?>
+    </div>
   </body>
 </html>
