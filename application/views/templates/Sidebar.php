@@ -17,13 +17,13 @@
       <ul class="nav navbar-nav">
         <li class="dropdown user user-menu">
           <a href="" class="dropdown-toggle" data-toggle="dropdown">
-            <img src="" class="user-image" alt="User Image">
+            <img src="<?= base_url("assets/profile.jpg") ?>" class="user-image" alt="User Image">
             <span class="hidden-xs">Admin aoyama</span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
-              <img src="" class="img-circle" alt="User Image">
+              <img src="<?= base_url("assets/profile.png") ?>" class="img-circle" alt="User Image">
               <p>
                 Alexander Pierce - Web Developer
                 <small>Member since Nov. 2012</small>
@@ -57,7 +57,7 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="" class="img-circle" alt="User Image">
+        <img src="<?= base_url("assets/profile.jpg") ?>" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
